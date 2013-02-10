@@ -191,11 +191,17 @@ config MACH_MESON3_STV_MBX_MC
 	help
 		Include support for the AML M3 geniatech board platform.
 
-config MACH_MESON3_STV_MBX_MC
+config MACH_MESON3_STV_MBX_MC_A11
         select GENERIC_ALLOCATOR
         bool "Support M3 (MyGica A11) platform"
         help
                 Include support for the AML M3 MyGica A11 board platform.
+
+config MACH_MESON3_STV_MBX_MC_ATV310B
+        select GENERIC_ALLOCATOR
+        bool "Support M3 (EnjoyTV ATV310B) platform"
+        help
+                Include support for the AML M3 EnjoyTV ATV310B board platform.
 
 config STV_RECOVERY
 	bool "make recovery partition visible"
